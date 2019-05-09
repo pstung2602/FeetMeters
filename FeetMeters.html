@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Feet<input id="Feet" oninput="trans()" type="number">
+<p>Meters:<span id="KQ"></span></p>
+Meters<input id="Meters" oninput="trans1()" type="number">
+<p>Feet:<span id="KQ1"></span></p>
+
+</body>
+<script>
+    function trans() {
+        let x=document.getElementById("Feet").value;
+        let y=x*0.305;
+        document.getElementById("KQ").innerHTML=y;
+    }
+    function trans1() {
+        let x=document.getElementById("Meters").value;
+        let y=x*3.279;
+        document.getElementById("KQ1").innerHTML=y;
+
+    }
+</script>
+</html>
